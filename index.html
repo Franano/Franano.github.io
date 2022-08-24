@@ -1,9 +1,71 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Franco</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Franco's playlist</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="icon" href="./assets/images/equalizer.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.FOG({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          highlightColor: 0x0,
+          midtoneColor: 0x34b9e3,
+          lowlightColor: 0x0,
+          baseColor: 0x0,
+          blurFactor: 0.6,
+          speed: 1.0,
+          zoom: 3,
+        });
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0)";
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main>
+      <header>
+        <h1>Hello there</h1>
+        <p>
+          This is a website design just to show you what music i'm listening. I
+          hope you enjoy
+        </p>
+        <a
+          target="_blank"
+          href="https://open.spotify.com/user/1277902463?si=87613482c19d404a"
+          ><h4 id="signature">&mdash; Franco</h4></a
+        >
+      </header>
+      <div id="spotify">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/1Tc78kP9uMUjHqkE6d6GlD?utm_source=generator&theme=0"
+          width="50%"
+          height="800"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        ></iframe>
+      </div>
+      <footer>José Franco &copy; - 2022</footer>
+    </main>
+
+    <script src="" async defer></script>
+  </body>
 </html>
