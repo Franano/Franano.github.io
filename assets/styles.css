@@ -19,6 +19,8 @@ main {
 }
 
 #vanta {
+  padding: 100px;
+  margin: 0, auto;
   z-index: 0;
   position: absolute;
   left: 0;
